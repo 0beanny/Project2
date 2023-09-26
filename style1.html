@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<style>
+    body{
+        margin:20px;
+        line-height: 26px;
+    }
+
+    #top{
+        background-color:green;
+        color:white;
+        padding:15px;
+    }
+
+    .middle{
+        position:relative;
+        overflow:auto;
+    }
+
+    #menubar{
+        width:200px;
+        float:left;
+    }
+
+    #main{
+        padding:10px;
+        margin:0 210px;
+    }
+
+    #sidebar{
+        background-color: deepskyblue;
+        color:white;
+        padding:10px;
+        width:180px;
+        bottom:0;
+        top:0;
+        right:0;
+        position:absolute;
+    }
+
+    #bottom{
+        border: 1px solid gray;
+        background-color:lightgray;
+        text-align:center;
+        padding:10px;
+        font-size:70%;
+    }
+
+    #top, #middle, #sidebar, .menuitem{
+        margin:4px;
+        border-radius:4px;
+    }
+  
+    .menuitem{
+        border:1px solid black;
+        background-color: lightgray;
+        padding:2px;
+    }
+
+    .menuitem:hover{
+        background-color: white;
+    }
+
+    .menuitem:first-child{
+        background-color: green;
+        color: white;
+        font-weight: bold;
+    }
+
+    #top h1, #top p, #menulist{
+        margin:0;
+        padding:0;
+    }
+
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+</head>
+<body>
+    <div class="container wrapper">
+        <div id="top">
+            <h1>Welcome to 노영빈's Homepage (22000225)</h1>
+            <p>Use the menu to select different Stylesheets</p>
+        </div>
+        <div class="middle">
+            <div id="menubar">
+                <ul id="menulist">
+                    <li class="menuitem">Stylesheet 1</li>
+                    <li class="menuitem" onclick="location.href='/style2.html'">Stylesheet 2</li>
+                    <li class="menuitem">Stylesheet 3</li>
+                    <li class="menuitem">Stylesheet 4</li>
+                    <li class="menuitem">No Stylesheet</li>  
+                </ul>
+            </div>
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+                <p>
+                This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+                <br>
+                <a href="#">Stylesheet1</a>,
+                <a href="#">Stylesheet2</a>,
+                <a href="#">Stylesheet3</a>,
+                <a href="#">Stylesheet4</a>.
+                </p>
+                <h2>No Styles</h2>
+                <p>
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+                <br>
+                <a href="#">No Stylesheet</a>.
+                </p>
+            </div>
+            <div id="sidebar">
+                <h3>Side-Bar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div> 
+        </div>
+        <div id="bottom">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        </div>
+    </div>
+</body>
+</html>
