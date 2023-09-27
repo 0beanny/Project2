@@ -1,28 +1,109 @@
 <!DOCTYPE html>
 
+<style>
+ 
+  html{
+    height:90%;
+  }
+
+  body {
+    height: 100%;
+  }
+  
+  body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+
+  form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .form-control{
+    width:280px;
+    border: 1px solid gray;
+    outline:none;
+  }
+
+  .form-control:focus{
+    border: 3px solid aqua;
+  }
+
+  .checkbox1{
+    padding-top: 10px;
+  }
+
+  .signbutton{
+    padding-top: 20px;
+  }
+
+  .copyright{
+    padding-top: 20px;
+  }
+
+  #sbutton{
+    height:50px;
+    width:300px;
+    border:1px solid blue;
+    color:white;
+    background-color: blue;
+    font-size:20px;
+    border-radius: 8px;
+  }
+
+  #word{
+    font-size:13px;
+  }
+
+
+</style>
+
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>example</title>
-    <link href="signin.css" rel="stylesheet">
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
 </head>
-<body class="text-center">
+<body>
     <form class="form-signin">
-      <img class="mb-4" src="bootstrap-solid.svg" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-      <label for="inputPassword" class="sr-only">Password</label>
+      <img src="bootstrap-solid.svg" alt="" width="72" height="72">
+      <div id="word">
+        <h1>Please sign in</h1> 
+      </div>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address">
       <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-      <div class="checkbox mb-3">
+      <div class="checkbox1">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">© 2017-2022</p>
+      <div class="signbutton">
+        <button id="sbutton" type="submit">Sign in</button>
+      </div>
+      <div class="copyright">
+        <p>© 2017-2022</p>
+      </div>
     </form>
 </body>
 </html>
